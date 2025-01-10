@@ -1,0 +1,30 @@
+.card {
+	/* Eminence (Purple) */
+	background-color: #7E3388;
+	/* Aureolin (Yellow) */
+	color: #F9E900;
+	padding: 16px;
+	height: 450px;
+	width: 450px;
+	margin: auto;
+}
+
+.cards {	
+	padding: 25px;
+	max-width: 1980px;
+	display: grid;
+	gap: 16px;
+	padding: 25px;
+}
+
+@media (min-width: 1176px) {
+	.cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1617px) {
+	.cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

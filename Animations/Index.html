@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of using CSS file</title>
+    <link rel = "stylesheet" href="style.css">
+    <style>
+        @keyframes
+        spin {0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }}       
+        .loader {border: 6px solid #f3f3f3; /* Light grey */
+        border-top: 6px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 2s linear infinite;} 
+    </style>
+</head>
+<body>
+    <p style="color: blue; font-size: 20px;">This is a paragraph</p>
+
+    <div class="container text-center mt-5">
+
+        <button class="cssfx-button">Hover Over Me!</button>
+        <div class="loader" style="margin: 100px auto;"></div>
+
+    </div>
+
+</body>
+</html>

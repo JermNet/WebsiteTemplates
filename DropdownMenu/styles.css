@@ -1,0 +1,54 @@
+/*Expandable stuff*/
+.expandable {
+	-webkit-text-stroke-width: 0;
+	font-weight: bold;
+	/*Eerie black*/
+	color: #172121;
+}
+
+.expandable-open .expandable-content-wrapper {
+	opacity: 1;
+	visibility: visible;
+	max-height: 10000px;
+	transition: opacity .5s ease-out, max-height .5s ease-out, visibility 0s;
+}
+
+.expandable-open .expandable-icon {
+	transform: rotate(-90deg);
+}
+
+.expandable-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px;
+	user-select: none;
+	/*Millennial Pink*/
+	background-color: #F3CFC6;
+	border-radius: 10px 10px 0 0;
+}
+
+.expandable-icon {
+	transition: transform 0.5s;
+	cursor: pointer;
+	font-size: 35px;
+}
+
+.expandable-content {
+	/*Millennial Pink*/
+	border: 1px solid #F3CFC6;
+	background-color: #F3CFC6;
+	border-radius: 0 0 10px 10px;
+}
+
+.expandable-content-wrapper {
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	max-height: 0;
+	transition: opacity .5s ease-out, max-height .5s ease-out, visibility 0s .5s;
+}
+
+.expandable p {
+	padding: 0 10px;
+}

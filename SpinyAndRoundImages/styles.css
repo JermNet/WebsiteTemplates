@@ -1,0 +1,12 @@
+.spin {
+	transition: all 1s ease-in-out 0s;
+}
+
+.round {
+	border-radius: 25px;
+}
+
+.spin:hover {
+	transform: rotate(360deg);
+	transition: all 1s ease-in-out 0s;
+}

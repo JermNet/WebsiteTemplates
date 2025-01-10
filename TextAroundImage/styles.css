@@ -1,0 +1,12 @@
+.text-box img {
+	max-width: 50%;
+	float: left;
+	margin-right: 15px;
+	height: auto;
+}
+
+.around {
+	margin: 50px auto 30px;
+	width: 80%;
+	display: flex;
+}
